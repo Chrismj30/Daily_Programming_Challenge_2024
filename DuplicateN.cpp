@@ -22,6 +22,6 @@ public:
 int main() {
     Solution s;
     vector<int> nums={3, 1, 3, 4, 2};
-    cout<<"Duplicate Number: "<<s.findDuplicate(nums)<< endl;
+    cout<<"Duplicate Number: "<<s.findDuplicate(nums)<<endl;
     return 0;
 }
