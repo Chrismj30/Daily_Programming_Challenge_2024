@@ -8,9 +8,9 @@ public:
         vector<vector<int>> ans;
         int sum=0;
         map[0].push_back(-1);
-        for (int i = 0; i < nums.size(); i++) {
+        for (int i=0;i<nums.size();i++){
             sum+=nums[i];  
-            if (map.find(sum) != map.end()) {
+            if (map.find(sum) != map.end()){
                 for(auto it:map[sum]){
                     ans.push_back({it+1,i});
                 }
