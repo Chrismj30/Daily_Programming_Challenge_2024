@@ -16,10 +16,10 @@ public:
                     distinctCount++;
                 }
                 charCount[s[j]]++;
-                if (distinctCount > k) {
+                if (distinctCount>k) {
                     break;
                 }
-                if (distinctCount == k) {
+                if (distinctCount==k) {
                     count++; 
                 }
             }
