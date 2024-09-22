@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class Solution {
+class Solution{
 public:
-    int countSubstrings(string s,int k) {
+    int countSubstrings(string s,int k){
         int count=0;
         int n=s.size();
 
@@ -11,15 +11,15 @@ public:
             unordered_map<char,int> charCount;
             int distinctCount=0;
 
-            for (int j=i;j<n;j++) {
-                if (charCount[s[j]]==0) {
+            for (int j=i;j<n;j++){
+                if(charCount[s[j]]==0){
                     distinctCount++;
                 }
                 charCount[s[j]]++;
-                if (distinctCount>k) {
+                if(distinctCount>k){
                     break;
                 }
-                if (distinctCount==k) {
+                if(distinctCount==k){
                     count++; 
                 }
             }
@@ -29,7 +29,7 @@ public:
     }
 };
 
-int main() {
+int main(){
     Solution sol;
     string s="aabacbebebe";
     int k=3;
