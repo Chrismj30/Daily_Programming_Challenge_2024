@@ -23,7 +23,7 @@ public:
 
 int main(){
     Solution s;
-    string s="abcabcbb";
-    cout<<s.lengthOfLongestSubstring(s);
+    string str="abcabcbb";
+    cout<<s.lengthOfLongestSubstring(str);
     return 0;
 }
